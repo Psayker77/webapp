@@ -1,0 +1,158 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+/* Основное меню */
+#menu {
+    margin-bottom: 10px;
+}
+#menu a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#menu a.active {
+    background-color: red;
+}
+#menu a:hover {
+    opacity: 0.8;
+}
+
+/* Подменю (сортировка) */
+#submenu {
+    margin-bottom: 20px;
+}
+#submenu a {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+#submenu a.active {
+    background-color: red;
+}
+#submenu a:hover {
+    opacity: 0.8;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Пагинация */
+.pagination {
+    margin-top: 10px;
+}
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 4px;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.pagination a:hover {
+    border: 2px solid #888;
+    padding: 4px 9px; /* чтобы не смещалось при добавлении рамки */
+    background-color: #ddd;
+}
+.pagination span {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+/* Формы */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form input[type="submit"] {
+    width: auto;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+/* Сообщения об успехе/ошибке */
+.ok {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Списки ссылок для редактирования и удаления */
+.edit-links, .delete-links {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+.edit-links a, .delete-links a {
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    color: #0066cc;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.edit-links a:hover, .delete-links a:hover {
+    background-color: #e0e0e0;
+}
+.edit-links .current, .delete-links .current {
+    background-color: #ffcccc;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
